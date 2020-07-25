@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: rgb(61, 53, 53);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    place-content: center center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+p {
+    margin: 0;
+}
+
+select,
+input {
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    line-height: 1.5;
+    text-align: center;
+}
