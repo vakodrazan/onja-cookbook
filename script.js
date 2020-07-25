@@ -5,6 +5,7 @@ const addNewStep = document.querySelector('.add-new-step')
 const step = document.querySelector('.step');
 
 
+// add an event listen for teh ingredient button
 const handleAddIngredientBtn = event => {
     event.preventDefault();
     const myELement = `
@@ -14,6 +15,8 @@ const handleAddIngredientBtn = event => {
 
 }
 
+
+// add an event listen for the step button
 const handleAddStepBtn = event => {
     event.preventDefault();
     const myELement = `
@@ -23,6 +26,8 @@ const handleAddStepBtn = event => {
 
 }
 
+
+// create an array when submiting the form
 const handleSubmitBtn = event => {
     event.preventDefault();
 
