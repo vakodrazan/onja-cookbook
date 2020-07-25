@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./cookbook.css">
+    </head>
+    <body>
+        <header>
+            <h1>Onja Cookbook</h1>
+        </header>
+        <div class="container">
+            <form>
+                <div>
+                    <label for="recipe">What's the recipe name?</label><br>
+                    <input
+                        class="input-form"
+                        type="text"
+                        id="recipe"
+                        name="recipe"
+                        placeholder="Enter your recipe name"
+                        required
+                    />
+                </div>
+
+                <div>
+                    <label for="url">Picture of the reult(URL)</label><br>
+                    <input
+                        class="input-form"
+                        type="url"
+                        id="url"
+                        name="url"
+                        placeholder="Enter url of your recipe"
+                        required
+                    />
+                </div>
+
+                <div>
+                    <label for="name">Who's the cook?</label><br>
+                    <input
+                        class="input-form"
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name here"
+                        required
+                    />
+                </div>
+
+                    <p>What's the difficulty?</p>
+                    <select name="difficulty" class="select-form" required>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+
+                    <p>How much time does it take?</p>
+                    <select name="dish" class="select-form" required>
+                        <option value="less-than-15min">Less than 15 minutes</option>
+                        <option value="15min">15 minutes</option>
+                        <option value="30min">30 minutes</option>
+                        <option value="45min">45 minutes</option>
+                        <option value="60min">60 minutes</option>
+                        <option value="more-than-1h">More than 1 hours</option>
+                    </select>
+
+                    <button class="submitOrder" type="submit">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
