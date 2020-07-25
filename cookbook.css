@@ -39,3 +39,8 @@ button {
     line-height: 1.5;
     text-align: center;
 }
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
