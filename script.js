@@ -19,7 +19,8 @@ const handleAddStepBtn = event => {
     const myELement = `
         <input name="step" type="text" id="step" required>
     `;
-    step.insertAdjacentHTML('beforeend', myELement)
+    step.insertAdjacentHTML('beforeend', myELement);
+
 }
 
 const handleSubmitBtn = event => {
@@ -37,7 +38,7 @@ const handleSubmitBtn = event => {
             timing: `${timing.value}`,
             ingredients: [`${ingredients.value}`],
             steps: [
-                `${step.value}`,
+                `${step.value}`
             ],
         },
     ];
