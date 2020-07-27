@@ -38,6 +38,7 @@
                     id="title" 
                     name="title" 
                     placeholder="Your recipe name" value="Eggs"
+                    required
                 />
                 <label for="picture">Picture of the result (URL)</label>
                 <input 
@@ -46,6 +47,7 @@
                     name="picture" 
                     placeholder="Enter the url of your picture"
                     value="https://bit.ly/2ZXyiKI"
+                    required
                 />
 
                 <label for="author">Who's the cook?</label>
@@ -55,6 +57,7 @@
                     name="author"
                     placeholder="Enter your name here"
                     value="Noeline"
+                    required
                 />
 
                 <label for="difficulty">What's the difficulty?</label>
@@ -77,7 +80,7 @@
                 <label for="ingredient1">Ingredients</label>
                 <ul id="ingredientList">
                     <li>
-                        <input type="text" id="ingredient1" value="ingredient 1">
+                        <input type="text" id="ingredient1" value="ingredient 1" required/>
                     </li>
                 </ul>
                 <button type="button" class="addIngredient">Add a new ingredient to the list</button>
@@ -85,7 +88,7 @@
                 <label for="step1">Steps</label>
                 <ul id="stepList">
                     <li>
-                        <input type="text" id="step1" value="Step 1">
+                        <input type="text" id="step1" value="Step 1" required/>
                     </li>
                 </ul>
                 <button type="button" class="addStep">Add a new steps to the list</button>
