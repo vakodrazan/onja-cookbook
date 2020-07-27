@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Onja Cookbook</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+                place-items: center center;
+            }
+            form {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+            }
+            li {
+                list-style: none;
+                width: 100%;
+            }
+            input {
+                width: 20rem;
+            }
+            ul {
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Onja Cookbook</h1>
+            <form>
+                <label for="title">What's the recipe name</label>
+                <input 
+                    type="text" 
+                    id="title" 
+                    name="title" 
+                    placeholder="Your recipe name" value="Eggs"
+                />
+                <label for="picture">Picture of the result (URL)</label>
+                <input 
+                    type="url" 
+                    id="picture" 
+                    name="picture" 
+                    placeholder="Enter the url of your picture"
+                    value="https://bit.ly/2ZXyiKI"
+                />
+
+                <label for="author">Who's the cook?</label>
+                <input
+                    type="text"
+                    id="author"
+                    name="author"
+                    placeholder="Enter your name here"
+                    value="Noeline"
+                />
+
+                <label for="difficulty">What's the difficulty?</label>
+                <select name="difficulty" id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+
+                <label for="timing">How much time does it take?</label>
+                <select name="timing" id="timing" class="select-timing">
+                    <option value="less-than-15min">Less than 15 minutes</option>
+                    <option value="15min">15 minutes</option>
+                    <option value="30min">30 minutes</option>
+                    <option value="45min">45 minutes</option>
+                    <option value="60min">60 minutes</option>
+                    <option value="more-than-1h">More than 1 hours</option>
+                </select>
+
+                <label for="ingredient1">Ingredients</label>
+                <ul id="ingredientList">
+                    <li>
+                        <input type="text" id="ingredient1" value="ingredient 1">
+                    </li>
+                </ul>
+                <button type="button" class="addIngredient">Add a new ingredient to the list</button>
+                
+                <label for="step1">Steps</label>
+                <ul id="stepList">
+                    <li>
+                        <input type="text" id="step1" value="Step 1">
+                    </li>
+                </ul>
+                <button type="button" class="addStep">Add a new steps to the list</button>
+
+                <button class="addRecipe" type="submit">Add your recipe</button>
+            </form>
+        </div>
+        <script src="./solution.js"></script>
+    </body>
+</html>
